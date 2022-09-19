@@ -1,0 +1,117 @@
+/* Main banner */
+
+.col-intro {
+    width: 60%;
+}
+
+@media screen and (max-width: 846px) {
+    .main-header-item-container {
+        flex-direction: column;
+    }
+
+    .col-intro {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+  }
+
+.additional-support-banner {
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0px 14px;
+}
+
+@media screen and (min-width: 846px) and (max-width: 1058px) {
+    .additional-support-banner{
+        width: 100%;
+    }
+  }
+
+.bounce-icon {
+    position: absolute;
+    top: -20px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.content {
+    padding: 42px 20px 24px 20px;
+    text-align: center;
+}
+
+.additional-support-button {
+    position: absolute;
+    bottom: -20px;
+}
+
+/* Hey guys, just wanted to point out that I am not super familiar with the bootstrap column / breakpoint system
+   and since you only wanted us to spend an hour I decided to improvise. I use css-grid frequently so
+   that's what you'll see below.  */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cards .col {
+    padding-bottom: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 756px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 757px) and (max-width: 1000px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+/* bottom banner */
+
+.overlap-img  {
+    position: relative;
+}
+
+.cta-image-section .overlap-img.left-img {
+    margin: 0 0 0 -5rem;
+}
+
+.become-student-btn {
+    position: absolute;
+    bottom: -26px;
+}
+
+.banner-two-text {
+    text-align: left;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .cta-content-element {
+        width: 95%;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .img-cta-container {
+        flex-direction: column;
+    }
+
+    .cta-image-section .overlap-img.left-img {
+        margin: 0 0 0 0rem;
+    }
+  }
